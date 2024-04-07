@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: saturno-pg
+    environment:
+      POSTGRES_DB: saturno
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: leonan2knet
+    ports:
+      - "5432:5432"
+    volumes:
+      - "C:/dev/docker/java/saturno:/var/lib/postgresql/data"
+volumes:
+  saturno:

@@ -1,0 +1,43 @@
+# Arquivos sensíveis a serem ignorados
+backend/src/main/resources/application.yaml
+backend/src/main/resources/application-test.yaml
+backend/src/main/resources/application-production.yaml.yaml
+backend/docker-compose.yaml
+frontend/.env
+
+# Diretórios e arquivos que não devem ser ignorados
+HELP.md
+
+# Diretórios e arquivos que devem ser rastreados, mesmo que estejam dentro de "target"
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Exclusões específicas para IDEs
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
